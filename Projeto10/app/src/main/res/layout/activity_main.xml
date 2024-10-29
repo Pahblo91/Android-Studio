@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -9,49 +10,131 @@
 
     <FrameLayout
         android:id="@+id/frameLayout8"
-        android:layout_width="227dp"
-        android:layout_height="400dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="#FF9800"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/frameLayout6"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_weight="1">
 
+        <TextView
+            android:id="@+id/app_Gasolina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:onClick="abrirApp_Gasolina"
+            android:text="Gasolina"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView_Gasolina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/gasolina" />
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/frameLayout6"
-        android:layout_width="211dp"
-        android:layout_height="385dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="#4CAF50"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout7"
         app:layout_constraintEnd_toStartOf="@+id/frameLayout8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_weight="1">
+
+        <TextView
+            android:id="@+id/app_imc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:onClick="abrirApp_Imc"
+            android:text="IMC"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView_Imc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/balanceada" />
 
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/frameLayout7"
-        android:layout_width="202dp"
-        android:layout_height="347dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="#3F51B5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/frameLayout5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout6">
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout6"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_weight="1">
 
+        <TextView
+            android:id="@+id/app_Calculadora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:onClick="abrirApp_Calculadora"
+            android:text="Calculadora"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView_Calculadora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/calculadora" />
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/frameLayout5"
-        android:layout_width="216dp"
-        android:layout_height="362dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="#FF0000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/frameLayout7"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout8">
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout8"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_weight="1">
 
+        <TextView
+            android:id="@+id/app_Apps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:onClick="abrirApp_Apps"
+            android:text="Apps"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView_Apps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/android" />
     </FrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
